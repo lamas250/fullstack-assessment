@@ -20,11 +20,6 @@
     "@prisma/client": "^5.20.0",
     "prisma": "^5.20.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "@itacash/eslint-config/node.js"
-    ]
-  },
   "exports": {
     "./prisma.ts": "./src/index.ts"
   }
