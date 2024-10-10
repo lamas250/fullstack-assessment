@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    restart: always
+    container_name: fs-database
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: fs-db
+      POSTGRES_USER: fs-user
+      POSTGRES_PASSWORD: fs-password
+    volumes:
+      - fs-db:/var/lib/postgresql/data
+
+volumes:
+  fs-db:

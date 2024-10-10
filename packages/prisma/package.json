@@ -1,0 +1,31 @@
+{
+  "name": "@fs/prisma",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prisma:studio": "prisma studio",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate:dev": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "@fs/typescript-config": "workspace:*"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "prisma": "^5.20.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@itacash/eslint-config/node.js"
+    ]
+  },
+  "exports": {
+    "./prisma.ts": "./src/index.ts"
+  }
+}
